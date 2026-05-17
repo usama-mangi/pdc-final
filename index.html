@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDC Deep Dive — Parallel & Distributed Computing</title>
+  <meta name="description" content="An interactive, concept-first deep dive into Parallel & Distributed Computing covering Virtualization, SDN, Docker, and Kubernetes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">PDC Deep Dive</span>
+      </div>
+      <div class="sidebar-subtitle">Parallel & Distributed Computing</div>
+    </div>
+    <div class="sidebar-nav" id="sidebar-nav"></div>
+    <div class="sidebar-footer">
+      <div class="progress-label">Course Progress</div>
+      <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progress-bar"></div></div>
+      <div class="progress-text" id="progress-text">0 / 10 modules</div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Top Bar -->
+    <header id="topbar">
+      <button id="menu-toggle" aria-label="Toggle sidebar">☰</button>
+      <div id="breadcrumb">Select a module to begin</div>
+      <div id="topbar-actions">
+        <button class="btn-sm" id="mark-done-btn" style="display:none">✓ Mark Done</button>
+      </div>
+    </header>
+
+    <!-- Welcome Screen -->
+    <section id="welcome-screen" class="welcome">
+      <div class="welcome-hero">
+        <div class="welcome-badge">10 Modules · Concept-First Learning</div>
+        <h1>Parallel & Distributed<br /><span class="gradient-text">Computing</span></h1>
+        <p class="welcome-desc">A complete deep-dive course built directly from your lecture slides. Every concept is explained in plain language with real-world analogies, followed by annotated commands and configurations so you know <em>exactly</em> what each line does.</p>
+        <div class="welcome-modules" id="welcome-grid"></div>
+      </div>
+    </section>
+
+    <!-- Module Content Area -->
+    <article id="content-area" class="content-area hidden"></article>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
